@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETOLOGY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="Head-container">
+            <img src="Logo.png" alt="Petology logo" width="60" class="Logo"> 
+            <h1 class="Petology">Petology</h1>
+            <nav class="Menu">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Pets">Pets</a>
+                <a href="#Item">Items</a>
+                <a href="#More">More</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="Home">
+        <h3>WELCOME TO PETOLOGY</h3>
+        <img src="Front.png" alt="Old woman holding a dog" width="500">
+        <p>Discover the wonderful world of pet companionship and learn essential care tips that will help you become the best pet parent possible. From proper nutrition and exercise to understanding animal behavior and emotional needs, we'll guide you through everything you need to know about responsible pet ownership.</p>
+    </section>
+
+    <!-- About Section-->
+    <section id="About">
+        <h2>LEARN AND UNDERSTAND OUR FURRY FRIENDS</h2>
+        <img src="Pets Happy.jpg" alt="Happy pets" width="500" height="300">
+        <p>Pet care is more than just providing food and shelter - it's about creating a nurturing environment that promotes the physical, emotional, and social well-being of your animal companions. As an experienced pet care specialist, I understand that proper pet care encompasses multiple essential aspects that contribute to a pet's overall health and happiness.</p>
+        
+        <ul>
+            <li>Improved physical health and longer lifespan</li>
+            <li>Enhanced emotional well-being and reduced anxiety</li>
+            <li>Stronger human-animal bond</li>
+            <li>Better socialization skills</li>
+            <li>Prevention of behavioral issues</li>
+            <li>Early detection of health problems</li>
+        </ul>
+
+        <h3>Essential Pet Care Guidelines:</h3>
+        <p>
+            <img src="medkit.png"  height="50"> <br>
+            1. Health & Nutrition
+            <ul>
+                <li>Regular veterinary check-ups and vaccinations</li>
+                <li>High-quality, age-appropriate diet</li>
+                <li>Fresh water available 24/7</li>
+                <li>Weight management and exercise</li>
+            </ul>
+            <br>
+            <img src="muscle.png"  height="50"> <br>
+            2. Physical Care
+            <ul>
+                <li>Grooming and hygiene maintenance</li>
+                <li>Care and nail trimming</li>
+                <li>Exercise and playtime</li>
+                <li>Comfortable living space</li>
+            </ul>
+            <br>
+            <img src="dog-head.png"  height="50"> <br>
+            3. Mental Stimulation
+            <ul>
+                <li>Interactive toys and puzzles</li> 
+                <li>Training sessions</li> 
+                <li>Environmental enrichment</li> 
+                <li>Social interaction</li>
+            </ul>
+            <br>
+            <img src="mind.png"  height="50"> <br>
+            4. Emotional Support
+            <ul>
+                <li>Consistent daily routine</li>
+                <li>Safe, quiet spaces for rest</li>
+                <li>Positive reinforcement</li>
+                <li>Quality one-on-one time</li>
+            </ul>
+        </p>
+
+        <p>Whether you're a first-time pet parent or an experienced owner, understanding and implementing proper pet care practices is crucial for your pet's well-being. Through education, patience, and dedication, you can provide the best possible life for your furry family member.</p>
+    </section>
+
+    <section>
+        <h2>CONNECT WITH OTHER PET OWNERS</h2>
+        <p>Talking about your furry friends with other owners not only helps with managing and learning but also understanding our dear friends.</p>
+        <img src="Main forum.PNG"> <img src="Forum 1.PNG"> <img src="Forum 2.PNG">
+        <a href="https://www.dogforums.com/threads/new-member-from-the-philippines.497985/">
+            <br>
+            <button>Learn more here</button>
+        </a>
+    </section>
+
+    <!-- Pets Section with Dynamic Links -->
+    <section id="Pets">
+        <h2>PETS</h2>
+        <div class="pet-display">
+            <button class="arrow left" onclick="prevPet()">&#60;</button>
+            <img src="Alice.jpeg" alt="Pet Image" class="pet-image" id="petImage">
+            <div class="pet-info">
+                <h3 id="petName">Pet Name: Alice</h3>
+                <a href="Alice.Html" target="_blank" id="viewLink"><button>VIEW</button></a>
+                <a href="https://paws.org.ph/alice/" target="_blank" id="adoptLink"><button>ADOPT</button></a>
+            </div>
+            <button class="arrow right" onclick="nextPet()">&#62;</button>
+        </div>
+        <a href="https://paws.org.ph/adopt/">
+            <button>MORE PETS</button>
+        </a>
+    </section>
+
+    <!-- Items Section with Dynamic Links -->
+    <section id="Item">
+        <h2>Pet Care and Toys</h2>
+        <div class="item-display">
+            <button class="arrow left" onclick="prevItem()">&#60;</button>
+            <img src="Cat food.webp" alt="Item Image" class="item-image" id="itemImage">
+            <div class="item-info">
+                <h3 id="itemName">Item Name: Acana Adult Indoor Entrée Dry Cat Food</h3>
+                <a href="https://www.petexpress.com.ph/collections/acana/products/acana-indoor-entree-free-run-chicken-and-turkey-adult-dry-cat-food-4-5kg" target="_blank" id="buyLink">
+                    <button>BUY</button>
+                </a>
+            </div>
+            <button class="arrow right" onclick="nextItem()">&#62;</button>
+        </div>
+        <a href="https://www.petexpress.com.ph">
+            <button>MORE PRODUCTS</button>
+        </a>
+    </section>
+
+    <!-- More Section with Top Workers -->
+    <section id="More">
+        <h2>OUR TOP WORKERS</h2>
+        <a href="https://www.facebook.com/LeSaob" target="_blank"><p>Company. Co.</p></a>
+        <div class="worker-profile-container">
+            <div class="worker-profile">
+                <a href="https://www.facebook.com/profile.php?id=100085189669218" target="_blank">
+                    <h4>Jeremy Dinos</h4>
+                </a>
+                <img src="Dinos.jpg" alt="Profile Image of Jeremy Dinos" width="300" height="300">
+            </div>
+            <div class="worker-profile">
+                <a href="https://www.facebook.com/RaynejusGuzman" target="_blank">
+                    <h4>Justine Guzman</h4>
+                </a>
+                <img src="Justine.jpg" alt="Profile Image of Justine Guzman" width="400" height="300">
+            </div>
+        </div>
+        <p>63+9517217689</p>
+        <p>Holy Ghost proper purok: 3</p> 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Petology. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Dynamic Image and Link Updates -->
+    <script>
+        // Data for Pets Section
+        const pets = [
+            {name: "Alice", image: "Alice.jpeg", viewLink: "Alice.Html", adoptLink: "https://paws.org.ph/alice/"},
+            {name: "Tender", image: "Tender.jpg", viewLink: "Tender.Html", adoptLink: "https://paws.org.ph/tender/"},
+            {name: "Foggy", image: "Foggy.jpeg", viewLink: "Foggy.Html", adoptLink: "https://paws.org.ph/foggy/"},
+            {name: "Pumi", image: "Pumi.jpg", viewLink: "Pumi.Html", adoptLink: "https://paws.org.ph/pumi/"},
+            {name: "Blessing", image: "Blessing.jpg", viewLink: "Blessing.Html", adoptLink: "https://paws.org.ph/blessing/"}
+        ];
+        let petIndex = 0;
+
+        function updatePet() {
+            const pet = pets[petIndex];
+            document.getElementById("petImage").src = pet.image;
+            document.getElementById("petName").textContent = "Pet Name: " + pet.name;
+            document.getElementById("viewLink").href = pet.viewLink;
+            document.getElementById("adoptLink").href = pet.adoptLink;
+        }
+
+        function prevPet() {
+            petIndex = (petIndex > 0) ? petIndex - 1 : pets.length - 1;
+            updatePet();
+        }
+
+        function nextPet() {
+            petIndex = (petIndex < pets.length - 1) ? petIndex + 1 : 0;
+            updatePet();
+        }
+
+        // Data for Items Section
+        const items = [
+            {name: "Acana Adult Indoor Entrée Dry Cat Food", image: "Cat food.webp", buyLink: "https://www.petexpress.com.ph/collections/acana/products/acana-indoor-entree-free-run-chicken-and-turkey-adult-dry-cat-food-4-5kg"},
+            {name: "Acana Adult Small Breed Dry Dog Food", image: "Dog food.webp", buyLink: "https://www.petexpress.com.ph/collections/acana/products/acana-adult-small-breed-dry-dog-food-2kg"},
+            {name: "Kennel Pro Pet Carrier", image: "Kennel.webp", buyLink: "https://www.petexpress.com.ph/collections/cage-carriers-beds/products/copy-of-kennel-pro-pet-carrier-medium-orange-kn307-61x40x39cm"}
+        ];
+        let itemIndex = 0;
+
+        function updateItem() {
+            const item = items[itemIndex];
+            document.getElementById("itemImage").src = item.image;
+            document.getElementById("itemName").textContent = "Item Name: " + item.name;
+            document.getElementById("buyLink").href = item.buyLink;
+        }
+
+        function prevItem() {
+            itemIndex = (itemIndex > 0) ? itemIndex - 1 : items.length - 1;
+            updateItem();
+        }
+
+        function nextItem() {
+            itemIndex = (itemIndex < items.length - 1) ? itemIndex + 1 : 0;
+            updateItem();
+        }
+    </script>
+
+</body>
+</html>
